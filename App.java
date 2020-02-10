@@ -37,7 +37,6 @@ public class App
             }
         };
         webSocket.connect();
-                //System.out.println("data sent...");
 
     }
 
