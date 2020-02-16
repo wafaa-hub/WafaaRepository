@@ -1,11 +1,13 @@
 package org.example;
 
 import org.json.JSONObject;
-import java.util.Iterator;
+
+
+import java.util.*;
 
 public class Company {
 
-    public JSONObject obj;
+    public JSONObject jsonObject;
     String date;
     String askprice;
     String gclose;
@@ -52,117 +54,55 @@ public class Company {
     String askvolume;
     String plow;
 
-    public Company() {
-    }
 
-    public Company(JSONObject obj) {
+    public Company(JSONObject jsonObject) {
 
-         this.obj = obj;
-         date="";
-         askprice="";
-         gclose="";
-         change ="";
-         gvolume ="";
-         gesi ="";
-         last ="";
-         direction ="";
-         bidprice ="";
-         egi = "";
-         gpchange= "";
-         lastvolume ="";
-         tbv ="";
-         open ="";
-         tav ="";
-         outflowers ="";
-         gchange ="";
-         volume ="";
-         time ="";
-         week52low ="";
-         inflowvalue="";
-         week52high="";
-         wsi="";
-         trades ="";
-         ipchange ="";
-         gegi = "";
-         min ="";
-         topic ="";
-         pchange ="";
-         esi ="";
-         max ="";
-         issnapshot ="";
-         wgi ="";
-         pclose ="";
-         maxlv ="";
-         iclose ="";
-         outflowvolume ="";
-         lastvalue ="";
-         high ="";
-         low ="";
-         lasttradeprice ="";
-         phigh ="";
-         outfloworders ="";
-         askvolume ="";
-         plow ="";
-    }
-
-    @Override
-    public String toString() {
-        return "Company{" +
-                "obj=" + obj +
-                ", date='" + date + '\'' +
-                ", askprice='" + askprice + '\'' +
-                ", gclose='" + gclose + '\'' +
-                ", change='" + change + '\'' +
-                ", gvolume='" + gvolume + '\'' +
-                ", gesi='" + gesi + '\'' +
-                ", last='" + last + '\'' +
-                ", direction='" + direction + '\'' +
-                ", bidprice='" + bidprice + '\'' +
-                ", egi='" + egi + '\'' +
-                ", gpchange='" + gpchange + '\'' +
-                ", lastvolume='" + lastvolume + '\'' +
-                ", tbv='" + tbv + '\'' +
-                ", open='" + open + '\'' +
-                ", tav='" + tav + '\'' +
-                ", outflowers='" + outflowers + '\'' +
-                ", gchange='" + gchange + '\'' +
-                ", volume='" + volume + '\'' +
-                ", time='" + time + '\'' +
-                ", week52low='" + week52low + '\'' +
-                ", inflowvalue='" + inflowvalue + '\'' +
-                ", week52high='" + week52high + '\'' +
-                ", wsi='" + wsi + '\'' +
-                ", trades='" + trades + '\'' +
-                ", ipchange='" + ipchange + '\'' +
-                ", gegi='" + gegi + '\'' +
-                ", min='" + min + '\'' +
-                ", topic='" + topic + '\'' +
-                ", pchange='" + pchange + '\'' +
-                ", esi='" + esi + '\'' +
-                ", max='" + max + '\'' +
-                ", issnapshot='" + issnapshot + '\'' +
-                ", wgi='" + wgi + '\'' +
-                ", pclose='" + pclose + '\'' +
-                ", maxlv='" + maxlv + '\'' +
-                ", iclose='" + iclose + '\'' +
-                ", outflowvolume='" + outflowvolume + '\'' +
-                ", lastvalue='" + lastvalue + '\'' +
-                ", high='" + high + '\'' +
-                ", low='" + low + '\'' +
-                ", lasttradeprice='" + lasttradeprice + '\'' +
-                ", phigh='" + phigh + '\'' +
-                ", outfloworders='" + outfloworders + '\'' +
-                ", askvolume='" + askvolume + '\'' +
-                ", plow='" + plow + '\'' +
-                '}';
-    }
-
-    public JSONObject getObj() {
-        return obj;
-    }
-
-    public void setObj(JSONObject obj) {
-        this.obj = obj;
+        this.jsonObject = jsonObject;
+        date = "";
+        askprice = "";
+        gclose = "";
+        change = "";
+        gvolume = "";
+        gesi = "";
+        last = "";
+        direction = "";
+        bidprice = "";
+        egi = "";
+        gpchange = "";
+        lastvolume = "";
+        tbv = "";
+        open = "";
+        tav = "";
+        outflowers = "";
+        gchange = "";
+        volume = "";
+        time = "";
+        week52low = "";
+        inflowvalue = "";
+        week52high = "";
+        wsi = "";
+        trades = "";
+        ipchange = "";
+        gegi = "";
+        min = "";
+        topic = "";
+        pchange = "";
+        esi = "";
+        max = "";
+        issnapshot = "";
+        wgi = "";
+        pclose = "";
+        maxlv = "";
+        iclose = "";
+        outflowvolume = "";
+        lastvalue = "";
+        high = "";
+        low = "";
+        lasttradeprice = "";
+        phigh = "";
+        outfloworders = "";
+        askvolume = "";
+        plow = "";
     }
 
     public JSONObject update(JSONObject jsonObject) throws Exception {
@@ -172,7 +112,7 @@ public class Company {
             String key = (String) keys.next();
             switch (key) {
                 case "date":
-                   this.date = jsonObject.getString("date");
+                    this.date = jsonObject.getString("date");
                     break;
                 case "askprice":
                     this.askprice = jsonObject.getString("askprice");
@@ -305,5 +245,13 @@ public class Company {
         return jsonObject;
 
     }
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "topic='" + topic + '\'' +
+                '}';
+    }
+
 
 }
