@@ -16,13 +16,14 @@ public class CompanyListAdapter extends ArrayAdapter<String> {
 
     private Context context;
     private int resource;
-    private ArrayList<String> marketWatchData;
+    private ArrayList<Company> list;
 
-    public CompanyListAdapter(@NonNull Context context, int resource, ArrayList<String> marketWatchData) {
-        super(context, resource, marketWatchData);
+    public CompanyListAdapter(@NonNull Context context, int resource, ArrayList<Company> list) {
+        super(context,resource);
+
         this.context = context;
         this.resource = resource;
-        this.marketWatchData = marketWatchData;
+        this.list = list;
 
     }
 
@@ -31,15 +32,15 @@ public class CompanyListAdapter extends ArrayAdapter<String> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         convertView = LayoutInflater.from(context).inflate(R.layout.listadapterview, parent, false);
-        String m = marketWatchData.get(position);
+        Company company = list.get(position);
 
+        TextView Value = convertView.findViewById(R.id.value);
         TextView Symbol = convertView.findViewById(R.id.symbol);
         TextView Close = convertView.findViewById(R.id.close);
-        TextView Value = convertView.findViewById(R.id.value);
 
-        Symbol.setText(marketWatchData.get(0));
-        Close.setText(marketWatchData.get(1));
-        Value.setText(marketWatchData.get(2));
+        Value.setText(String.format("{0:000,000,000}", company.lastvalue));
+        Close.setText(company.pclose);
+        Symbol.setText(company.topic.substring(3,6));
 
         return convertView;
     }
