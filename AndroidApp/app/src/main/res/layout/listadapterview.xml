@@ -10,33 +10,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
+        android:background="@drawable/textborder"
         android:textColor="#ffffff"
         android:textColorLink="#ffffff"
         android:textSize="15dp"
-        android:textStyle="bold"
-        android:background="@drawable/textborder"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/close"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
+        android:background="@drawable/textborder"
         android:textColor="#ffffff"
         android:textColorLink="#ffffff"
         android:textSize="15dp"
-        android:textStyle="bold"
-        android:background="@drawable/textborder"
-       />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/symbol"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="33"
+        android:background="@drawable/textborder"
         android:textColor="#ffffff"
-        android:textSize="15dp"
-        android:textStyle="bold"
         android:textColorLink="#ffffff"
-        android:background="@drawable/textborder"/>
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
 </LinearLayout>

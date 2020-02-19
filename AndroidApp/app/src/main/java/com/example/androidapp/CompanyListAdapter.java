@@ -10,9 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class CompanyListAdapter extends ArrayAdapter<String> {
+public class CompanyListAdapter extends ArrayAdapter<Company> {
 
     private Context context;
     private int resource;
@@ -24,7 +25,6 @@ public class CompanyListAdapter extends ArrayAdapter<String> {
         this.context = context;
         this.resource = resource;
         this.list = list;
-
     }
 
     @NonNull
@@ -38,7 +38,10 @@ public class CompanyListAdapter extends ArrayAdapter<String> {
         TextView Symbol = convertView.findViewById(R.id.symbol);
         TextView Close = convertView.findViewById(R.id.close);
 
-        Value.setText(String.format("{0:000,000,000}", company.lastvalue));
+        double value = Double.parseDouble(company.lastvalue);
+        DecimalFormat formatter = new DecimalFormat("#,###.00");
+
+        Value.setText(formatter.format(value));
         Close.setText(company.pclose);
         Symbol.setText(company.topic.substring(3,7));
 
