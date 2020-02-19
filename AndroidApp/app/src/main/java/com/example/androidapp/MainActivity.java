@@ -12,12 +12,13 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
 import tech.gusavila92.websocketclient.WebSocketClient;
 
 
 public class MainActivity extends AppCompatActivity {
     private static Map<String, Company> map;
-    private static ArrayList<MarketWatchData> arrayList = new ArrayList<>();
+    private static ArrayList<String> arrayList = new ArrayList<>();
 
     public static ListView watchMarket;
     public static CompanyListAdapter adapter;
@@ -60,34 +61,15 @@ public class MainActivity extends AppCompatActivity {
 
                     if (map.containsKey(jsonObject.getString("topic"))) {
                         map.get(jsonObject.getString("topic")).update(jsonObject);
+
                     } else {
                         map.put(jsonObject.getString("topic"), new Company(jsonObject));
+                        arrayList.add(map.keySet().toString());
+
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
-               // List<Map.Entry<String, Company>> list = new ArrayList<>(map.entrySet());
-                Map.Entry<String, Company> m = new Map.Entry<String, Company>() {
-                    @Override
-                    public String getKey() {
-                        return null;
-                    }
-
-                    @Override
-                    public Company getValue() {
-                        return null;
-                    }
-
-                    @Override
-                    public Company setValue(Company value) {
-                        return null;
-                    }
-                };
-
-                MarketWatchData marketWatchData = new MarketWatchData(m.getValue().topic, m.getValue().gclose, m.getValue().lastvalue);
-                arrayList.add(marketWatchData);
-
             }
 
             @Override
@@ -115,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("socket is close....");
 
             }
-
         };
         webSocket.connect();
 

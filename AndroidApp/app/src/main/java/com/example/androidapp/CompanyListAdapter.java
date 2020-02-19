@@ -12,13 +12,13 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class CompanyListAdapter extends ArrayAdapter<MarketWatchData> {
+public class CompanyListAdapter extends ArrayAdapter<String> {
 
     private Context context;
     private int resource;
-    private ArrayList<MarketWatchData> marketWatchData;
+    private ArrayList<String> marketWatchData;
 
-    public CompanyListAdapter(@NonNull Context context, int resource, ArrayList<MarketWatchData> marketWatchData) {
+    public CompanyListAdapter(@NonNull Context context, int resource, ArrayList<String> marketWatchData) {
         super(context, resource, marketWatchData);
         this.context = context;
         this.resource = resource;
@@ -31,15 +31,15 @@ public class CompanyListAdapter extends ArrayAdapter<MarketWatchData> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         convertView = LayoutInflater.from(context).inflate(R.layout.listadapterview, parent, false);
-        MarketWatchData m = marketWatchData.get(position);
+        String m = marketWatchData.get(position);
 
         TextView Symbol = convertView.findViewById(R.id.symbol);
         TextView Close = convertView.findViewById(R.id.close);
         TextView Value = convertView.findViewById(R.id.value);
 
-        Symbol.setText(m.getSymbol());
-        Close.setText(m.getClose());
-        Value.setText(m.getValue());
+        Symbol.setText(marketWatchData.get(0));
+        Close.setText(marketWatchData.get(1));
+        Value.setText(marketWatchData.get(2));
 
         return convertView;
     }
