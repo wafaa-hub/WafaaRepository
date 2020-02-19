@@ -1,49 +1,42 @@
 package com.example.androidapp;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
 import tech.gusavila92.websocketclient.WebSocketClient;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class MainActivity extends AppCompatActivity {
     private static Map<String, Company> map;
-    private  static   List<Map.Entry<String, Company>> list;
-    TextView Result ;
-    Button Show;
+    private static ArrayList<MarketWatchData> arrayList = new ArrayList<>();
+
+    public static ListView watchMarket;
+    public static CompanyListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Result =  findViewById(R.id.result);
-        Show = findViewById(R.id.show);
+        setContentView(R.layout.viewlistcontent);
 
-        Show.setOnClickListener(this);
 
-        map = new HashMap<String, Company>();
+        map = new HashMap();
+        watchMarket = findViewById(R.id.watchmarket);
+        adapter = new CompanyListAdapter(this, R.layout.listadapterview, arrayList);
+        watchMarket.setAdapter(adapter);
 
         URI uri;
         try {
-            // Connect to local host
             uri = new URI("wss://liveff01.tickerchart.net/streamhubws/");
-        }
-        catch (URISyntaxException e) {
+        } catch (URISyntaxException e) {
             e.printStackTrace();
             return;
         }
@@ -61,12 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onTextReceived(String message) {
 
                 JSONObject jsonObject = null;
+
                 try {
                     jsonObject = new JSONObject(message);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                try {
+
                     if (map.containsKey(jsonObject.getString("topic"))) {
                         map.get(jsonObject.getString("topic")).update(jsonObject);
                     } else {
@@ -76,14 +67,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     e.printStackTrace();
                 }
 
-                list = new ArrayList<>(map.entrySet());
-                Collections.sort(list, new Comparator<Map.Entry<String, Company>>() {
+               // List<Map.Entry<String, Company>> list = new ArrayList<>(map.entrySet());
+                Map.Entry<String, Company> m = new Map.Entry<String, Company>() {
                     @Override
-                    public int compare(Map.Entry<String, Company> t, Map.Entry<String, Company> t1) {
-                        return t1.getValue().change.compareTo(t.getValue().change);
+                    public String getKey() {
+                        return null;
                     }
-                });
-                // System.out.println(list);
+
+                    @Override
+                    public Company getValue() {
+                        return null;
+                    }
+
+                    @Override
+                    public Company setValue(Company value) {
+                        return null;
+                    }
+                };
+
+                MarketWatchData marketWatchData = new MarketWatchData(m.getValue().topic, m.getValue().gclose, m.getValue().lastvalue);
+                arrayList.add(marketWatchData);
+
             }
 
             @Override
@@ -115,11 +119,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         };
         webSocket.connect();
 
+
     }
 
-    @Override
-    public void onClick(View v) {
 
-        Result.setText(list.toString());
-    }
 }
