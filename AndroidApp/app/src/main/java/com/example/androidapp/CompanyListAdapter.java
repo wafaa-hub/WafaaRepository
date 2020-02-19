@@ -40,7 +40,7 @@ public class CompanyListAdapter extends ArrayAdapter<String> {
 
         Value.setText(String.format("{0:000,000,000}", company.lastvalue));
         Close.setText(company.pclose);
-        Symbol.setText(company.topic.substring(3,6));
+        Symbol.setText(company.topic.substring(3,7));
 
         return convertView;
     }
