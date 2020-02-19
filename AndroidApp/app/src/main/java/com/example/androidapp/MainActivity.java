@@ -18,15 +18,14 @@ import tech.gusavila92.websocketclient.WebSocketClient;
 
 public class MainActivity extends AppCompatActivity {
     private static Map<String, Company> map;
-    private static ArrayList<String> arrayList = new ArrayList<>();
-
-    public static ListView watchMarket;
-    public static CompanyListAdapter adapter;
+    private static ArrayList<Company> arrayList = new ArrayList<>();
+    ListView watchMarket;
+    CompanyListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.viewlistcontent);
+        setContentView(R.layout.activity_main);
 
 
         map = new HashMap();
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextReceived(String message) {
 
-                JSONObject jsonObject = null;
+                JSONObject jsonObject ;
 
                 try {
                     jsonObject = new JSONObject(message);
@@ -62,9 +61,12 @@ public class MainActivity extends AppCompatActivity {
                     if (map.containsKey(jsonObject.getString("topic"))) {
                         map.get(jsonObject.getString("topic")).update(jsonObject);
 
+
                     } else {
-                        map.put(jsonObject.getString("topic"), new Company(jsonObject));
-                        arrayList.add(map.keySet().toString());
+                        Company company = new Company(jsonObject);
+                        map.put(jsonObject.getString("topic"), company);
+                        arrayList.add(company);
+                        adapter.notifyDataSetChanged();
 
                     }
                 } catch (Exception e) {
@@ -74,32 +76,27 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onBinaryReceived(byte[] data) {
-
             }
 
             @Override
             public void onPingReceived(byte[] data) {
-
             }
 
             @Override
             public void onPongReceived(byte[] data) {
-
             }
 
             @Override
             public void onException(Exception e) {
-
             }
 
             @Override
             public void onCloseReceived() {
                 System.out.println("socket is close....");
-
             }
         };
-        webSocket.connect();
 
+        webSocket.connect();
 
     }
 
