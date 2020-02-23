@@ -1,4 +1,6 @@
 package com.example.androidapp;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
 
@@ -6,106 +8,282 @@ import java.util.*;
 
 public class Company {
 
-    public JSONObject jsonObject;
-    public String date;
-    public String askprice;
-    public String gclose;
-    public String change;
-    public String gvolume;
-    public String gesi;
-    public String last;
-    public String direction;
-    public String bidprice;
-    public String egi;
-    public String gpchange;
-    public String lastvolume;
-    public String tbv;
-    public String open;
-    public String tav;
-    public String outflowers;
-    public String gchange;
-    public String volume;
-    public String time;
-    public String week52low;
-    public String inflowvalue;
-    public String week52high;
-    public String wsi;
-    public String trades;
-    public String ipchange;
-    public String gegi;
-    public String min;
-    public String topic;
-    public String pchange;
-    public String esi;
-    public String max;
-    public String issnapshot;
-    public String wgi;
-    public String pclose;
-    public String maxlv;
-    public String iclose;
-    public String outflowvolume;
-    public String lastvalue;
-    public String high;
-    public String low;
-    public String lasttradeprice;
-    public String phigh;
-    public String outfloworders;
-    public String askvolume;
-    public String plow;
-
-
-    public Company(JSONObject jsonObject) {
-
-        this.jsonObject = jsonObject;
-        date = "";
-        askprice = "";
-        gclose = "";
-        change = "";
-        gvolume = "";
-        gesi = "";
-        last = "";
-        direction = "";
-        bidprice = "";
-        egi = "";
-        gpchange = "";
-        lastvolume = "";
-        tbv = "";
-        open = "";
-        tav = "";
-        outflowers = "";
-        gchange = "";
-        volume = "";
-        time = "";
-        week52low = "";
-        inflowvalue = "";
-        week52high = "";
-        wsi = "";
-        trades = "";
-        ipchange = "";
-        gegi = "";
-        min = "";
-        topic = "";
-        pchange = "";
-        esi = "";
-        max = "";
-        issnapshot = "";
-        wgi = "";
-        pclose = "";
-        maxlv = "";
-        iclose = "";
-        outflowvolume = "";
-        lastvalue = "";
-        high = "";
-        low = "";
-        lasttradeprice = "";
-        phigh = "";
-        outfloworders = "";
-        askvolume = "";
-        plow = "";
+    public JSONObject getJsonObject() {
+        return jsonObject;
     }
 
-    public JSONObject update(JSONObject jsonObject) throws Exception {
+    private JSONObject jsonObject;
+    private String date;
+    private String askprice;
+    private String gclose;
+    private String change;
+    private String gvolume;
+    private String gesi;
+    private String last;
+    private String direction;
+    private String bidprice;
+    private String egi;
+    private String gpchange;
+    private String lastvolume;
+    private String tbv;
+    private String open;
+    private String tav;
+    private String gchange;
+    private String volume;
+    private String time;
+    private String week52low;
+    private String inflowvalue;
+    private String week52high;
+    private String wsi;
+    private String trades;
+    private String ipchange;
+    private String gegi;
+    private String min;
+    private String topic;
+    private String pchange;
+    private String esi;
+    private String max;
+    private String issnapshot;
+    private String wgi;
+    private String pclose;
+    private String maxlv;
+    private String iclose;
+    private String outflowvolume;
+    private String lastvalue;
+    private String high;
+    private String low;
+    private String lasttradeprice;
+    private String phigh;
+    private String outfloworders;
+    private String askvolume;
+    private String plow;
 
+    public String getDate() {
+        return date;
+    }
+
+    public String getAskprice() {
+        return askprice;
+    }
+
+    public String getGclose() {
+        return gclose;
+    }
+
+    public String getChange() {
+        return change;
+    }
+
+    public String getGvolume() {
+        return gvolume;
+    }
+
+    public String getGesi() {
+        return gesi;
+    }
+
+    public String getLast() {
+        return last;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public String getBidprice() {
+        return bidprice;
+    }
+
+    public String getEgi() {
+        return egi;
+    }
+
+    public String getGpchange() {
+        return gpchange;
+    }
+
+    public String getLastvolume() {
+        return lastvolume;
+    }
+
+    public String getTbv() {
+        return tbv;
+    }
+
+    public String getOpen() {
+        return open;
+    }
+
+    public String getTav() {
+        return tav;
+    }
+
+    public String getGchange() {
+        return gchange;
+    }
+
+    public String getVolume() {
+        return volume;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public String getWeek52low() {
+        return week52low;
+    }
+
+    public String getInflowvalue() {
+        return inflowvalue;
+    }
+
+    public String getWeek52high() {
+        return week52high;
+    }
+
+    public String getWsi() {
+        return wsi;
+    }
+
+    public String getTrades() {
+        return trades;
+    }
+
+    public String getIpchange() {
+        return ipchange;
+    }
+
+    public String getGegi() {
+        return gegi;
+    }
+
+    public String getMin() {
+        return min;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public String getPchange() {
+        return pchange;
+    }
+
+    public String getEsi() {
+        return esi;
+    }
+
+    public String getMax() {
+        return max;
+    }
+
+    public String getIssnapshot() {
+        return issnapshot;
+    }
+
+    public String getWgi() {
+        return wgi;
+    }
+
+    public String getPclose() {
+        return pclose;
+    }
+
+    public String getMaxlv() {
+        return maxlv;
+    }
+
+    public String getIclose() {
+        return iclose;
+    }
+
+    public String getOutflowvolume() {
+        return outflowvolume;
+    }
+
+    public String getLastvalue() {
+        return lastvalue;
+    }
+
+    public String getHigh() {
+        return high;
+    }
+
+    public String getLow() {
+        return low;
+    }
+
+    public String getLasttradeprice() {
+        return lasttradeprice;
+    }
+
+    public String getPhigh() {
+        return phigh;
+    }
+
+    public String getOutfloworders() {
+        return outfloworders;
+    }
+
+    public String getAskvolume() {
+        return askvolume;
+    }
+
+    public String getPlow() {
+        return plow;
+    }
+
+    public Company(JSONObject jsonObject) throws JSONException {
+
+        this.jsonObject = jsonObject;
+        date = jsonObject.get("date").toString();
+        askprice = jsonObject.get("askprice").toString();
+        gclose = jsonObject.get("gclose").toString();
+        change = jsonObject.get("change").toString();
+        gvolume = jsonObject.get("gvolume").toString();
+        gesi = jsonObject.get("gesi").toString();
+        last = jsonObject.get("last").toString();
+        direction = jsonObject.get("direction").toString();
+        bidprice = jsonObject.get("bidprice").toString();
+        egi = jsonObject.get("egi").toString();
+        gpchange = jsonObject.get("gpchange").toString();
+        lastvolume = jsonObject.get("lastvolume").toString();
+        tbv = jsonObject.get("tbv").toString();
+        open = jsonObject.get("open").toString();
+        tav = jsonObject.get("tav").toString();
+        gchange = jsonObject.get("gchange").toString();
+        volume = jsonObject.get("volume").toString();
+        time = jsonObject.get("time").toString();
+        week52low = jsonObject.get("week52low").toString();
+        inflowvalue = jsonObject.get("inflowvalue").toString();
+        week52high = jsonObject.get("week52high").toString();
+        wsi = jsonObject.get("wsi").toString();
+        trades = jsonObject.get("trades").toString();
+        ipchange = jsonObject.get("ipchange").toString();
+        gegi = jsonObject.get("gegi").toString();
+        min = jsonObject.get("min").toString();
+        topic = jsonObject.get("topic").toString();
+        pchange = jsonObject.get("pchange").toString();
+        esi = jsonObject.get("esi").toString();
+        max = jsonObject.get("max").toString();
+        issnapshot = jsonObject.get("issnapshot").toString();
+        wgi = jsonObject.get("wgi").toString();
+        pclose = jsonObject.get("pclose").toString();
+        maxlv = jsonObject.get("maxlv").toString();
+        iclose = jsonObject.get("iclose").toString();
+        outflowvolume = jsonObject.get("outflowvolume").toString();
+        lastvalue = jsonObject.get("lastvalue").toString();
+        high = jsonObject.get("high").toString();
+        low = jsonObject.get("low").toString();
+        lasttradeprice = jsonObject.get("lasttradeprice").toString();
+        phigh = jsonObject.get("phigh").toString();
+        outfloworders = jsonObject.get("outfloworders").toString();
+        askvolume = jsonObject.get("askvolume").toString();
+        plow = jsonObject.get("plow").toString();
+    }
+
+    public void update(JSONObject jsonObject) throws Exception {
         Iterator keys = jsonObject.keys();
         while (keys.hasNext()) {
             String key = (String) keys.next();
@@ -154,9 +332,6 @@ public class Company {
                     break;
                 case "askvolume":
                     this.askvolume = jsonObject.getString("askvolume");
-                    break;
-                case "outflowers":
-                    this.outflowers = jsonObject.getString("outflowers");
                     break;
                 case "gchange":
                     this.gchange = jsonObject.getString("gchange");
@@ -241,7 +416,6 @@ public class Company {
                     break;
             }
         }
-        return jsonObject;
 
     }
 
@@ -251,6 +425,4 @@ public class Company {
                 "topic='" + topic + '\'' +
                 '}';
     }
-
-
 }
