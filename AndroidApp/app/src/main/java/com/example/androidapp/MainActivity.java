@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     ListView watchMarket;
-    private  CompanyListAdapter adapter;
-    private  Map<String, Company> map = new HashMap();
-    private  ArrayList<Company> arrayList = new ArrayList<>();
+    private CompanyListAdapter adapter;
+    private Map<String, Company> map = new HashMap();
+    private ArrayList<Company> arrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,16 +53,21 @@ public class MainActivity extends AppCompatActivity {
                 webSocket.send("subscribe=QO.2010.TAD,QO.4180.TAD,QO.4061.TAD,QO.2140.TAD,QO.4130.TAD,QO.6070.TAD,QO.1120.TAD,QO.2170.TAD,QO.1080.TAD,QO.3010.TAD,QO.2210.TAD,QO.2200.TAD,QO.4150.TAD,QO.4080.TAD,QO.6060.TAD,QO.1020.TAD,QO.1050.TAD,QO.3080.TAD,QO.2180.TAD,QO.2100.TAD,QO.6090.TAD,QO.4190.TAD,QO.4100.TAD,QO.6010.TAD,QO.4160.TAD,QO.2080.TAD,QO.2090.TAD,QO.2060.TAD,QO.2220.TAD,QO.6020.TAD,QO.1010.TAD,QO.1090.TAD,QO.2120.TAD,QO.2020.TAD,QO.2030.TAD,QO.2160.TAD,QO.4050.TAD,QO.2110.TAD,QO.3030.TAD,QO.2040.TAD,QO.2230.TAD,QO.5110.TAD,QO.6050.TAD,QO.4010.TAD,QO.2130.TAD,QO.4140.TAD,QO.2250.TAD,QO.2190.TAD,QO.4110.TAD,QO.2070.TAD");
 
             }
+
             @Override
             public void onMessage(WebSocket webSocket, String text) {
                 System.out.println(text);
                 final JSONObject jsonObject;
+                boolean flag = false;
 
                 try {
                     jsonObject = new JSONObject(text);
 
                     if (map.containsKey(jsonObject.getString("topic"))) {
                         map.get(jsonObject.getString("topic")).update(jsonObject);
+                        flag = true;
+                        adapter.Flag(flag);
+
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -71,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                         });
 
                     } else {
-
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -81,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
                                     adapter.notifyDataSetChanged();
 
                                 } catch (JSONException e) {
-
                                 }
                             }
                         });
