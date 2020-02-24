@@ -1,7 +1,6 @@
 package com.example.androidapp;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +23,7 @@ public class CompanyListAdapter extends ArrayAdapter<Company> {
     private int resource;
     private List<Company> list;
     TextView Value, Symbol, Close;
+    boolean flag;
 
     public CompanyListAdapter(@NonNull Context context, int resource, List<Company> list) {
         super(context, resource, list);
@@ -47,8 +47,7 @@ public class CompanyListAdapter extends ArrayAdapter<Company> {
             Close = convertView.findViewById(R.id.close);
         }
 
-        Animation animFadeIn = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
-        Close.startAnimation(animFadeIn);
+        Symbol.setText(company.getTopic().substring(3, 7));
 
         if (company.getLastvalue().equals("#")) {
             Value.setText(company.getLastvalue());
@@ -58,9 +57,22 @@ public class CompanyListAdapter extends ArrayAdapter<Company> {
             double value = Double.parseDouble(company.getLastvalue());
             Value.setText(formatter.format(value));
         }
-        Symbol.setText(company.getTopic().substring(3, 7));
-        Close.setText(company.getPclose());
+
+        String close = company.getPclose();
+        Close.setText(close);
+
+        Animation animFadeIn = AnimationUtils.loadAnimation(context, R.anim.fade_in);
+
+        if (flag) {
+            Close.startAnimation(animFadeIn);
+        }
 
         return convertView;
+    }
+
+    public void Flag(boolean flag) {
+
+        this.flag = flag;
+
     }
 }
