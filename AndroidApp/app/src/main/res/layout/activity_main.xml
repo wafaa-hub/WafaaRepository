@@ -57,7 +57,6 @@
         android:id="@+id/watchmarket"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#4F4F4F	"
         android:scrollbars="horizontal"
         android:divider="#ffffff"
         android:scrollIndicators="right"
