@@ -19,19 +19,15 @@ import java.util.List;
 
 public class CompanyListViewAdapter extends ArrayAdapter<Company> {
 
-    private  Context        context;
-    private  List<Company>  list;
-    private  TextView       Value;
-    private  TextView       Symbol;
-    private  TextView       Close;
-    private  int            resource;
+    private Context context;
+    private List<Company> list;
+
 
     public CompanyListViewAdapter(@NonNull Context context, int resource, List<Company> companies) {
         super(context, resource, companies);
 
-        this.context  =  context;
-        this.resource =  resource;
-        list          =  companies;
+        this.context = context;
+        list = companies;
     }
 
     @NonNull
@@ -41,63 +37,37 @@ public class CompanyListViewAdapter extends ArrayAdapter<Company> {
         Company company = list.get(position);
 
         if (convertView == null) {
-
-            LayoutInflater inflater =  LayoutInflater.from(getContext());
-            convertView             =  inflater.inflate(R.layout.listadapterview, parent, false);
+            LayoutInflater inflater = LayoutInflater.from(getContext());
+            convertView = inflater.inflate(R.layout.listadapterview, parent, false);
         }
 
-        Value  = convertView.findViewById(R.id.value);
-        Symbol = convertView.findViewById(R.id.symbol);
-        Close  = convertView.findViewById(R.id.close);
+        TextView value = convertView.findViewById(R.id.value);
+        TextView symbol = convertView.findViewById(R.id.symbol);
+        TextView close = convertView.findViewById(R.id.close);
 
         if (position % 2 == 0) {
-
-            Symbol.setBackgroundResource(R.drawable.greyrow);
-            Close. setBackgroundResource(R.drawable.bluerowlight);
-            Value. setBackgroundResource(R.drawable.greyrow);
-
-        } else {
-
-            Symbol.setBackgroundResource(R.drawable.blackrow);
-            Close. setBackgroundResource(R.drawable.bluerowdark);
-            Value. setBackgroundResource(R.drawable.blackrow);
-        }
-
-        if (company.getTopic().isEmpty()) {
-
-            Symbol.setText(company.getTopic());
+            symbol.setBackgroundResource(R.drawable.greyrow);
+            close.setBackgroundResource(R.drawable.bluerowlight);
+            value.setBackgroundResource(R.drawable.greyrow);
 
         } else {
-
-            Symbol.setText(company.getTopic().substring(3, 7));
+            symbol.setBackgroundResource(R.drawable.blackrow);
+            close.setBackgroundResource(R.drawable.bluerowdark);
+            value.setBackgroundResource(R.drawable.blackrow);
         }
 
-        if (company.getLastvalue().equals("#")) {
+        symbol.setText(company.getTopic ());
+        close.setText(company.getPclose());
+        value.setText(company.getLastvalue());
 
-            Value.setText(company.getLastvalue());
+        Animation animFadeIn = AnimationUtils.loadAnimation(context, R.anim.fade_in);
 
-        } else {
-
-            String pattern          = "###,###.###";
-            DecimalFormat formatter = new DecimalFormat(pattern);
-            double value            = Double.parseDouble(company.getLastvalue());
-
-            Value.setText(formatter.format(value));
-
+        if (company.islastHasChanged()) {
+            close.startAnimation(animFadeIn);
+            company.setlastHasChanged(false);
         }
 
-            Close.setText(company.getPclose());
-
-            Animation animFadeIn = AnimationUtils.loadAnimation(context, R.anim.fade_in);
-
-        if (company.isFlag()) {
-
-            Close.  startAnimation(animFadeIn);
-            company.setFlag(false);
-
-        }
-
-         return convertView;
+        return convertView;
     }
 
 

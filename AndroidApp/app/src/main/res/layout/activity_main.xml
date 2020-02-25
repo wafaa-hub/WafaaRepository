@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -57,9 +60,9 @@
         android:id="@+id/watchmarket"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="horizontal"
         android:divider="#ffffff"
+        android:dividerHeight="1dp"
         android:scrollIndicators="right"
-        android:dividerHeight="1dp"/>
+        android:scrollbars="horizontal" />
 
 </LinearLayout>
