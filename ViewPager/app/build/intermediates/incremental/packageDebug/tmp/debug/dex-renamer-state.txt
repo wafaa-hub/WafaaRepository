@@ -1,0 +1,4 @@
+#Sun Jul 05 12:42:51 IDT 2020
+base.0=C\:\\Users\\Wafaa\\Documents\\WafaaRepository\\ViewPager\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

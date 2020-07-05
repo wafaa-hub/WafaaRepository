@@ -1,0 +1,138 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\fe959992dd9fb5a624a6cac620166189\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\14a4bde89efe72d300e87317d4bb7aeb\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\e4d436b8b0dbda28958f7060c3a14e99\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\a5156bb4e257266ad61a8c699198ba69\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\67c7f3dc3ff23c3797f8d6b6973d092d\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\dfc11e809376578739bfc1e5c6c2ca25\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\034687bf31c141b79e025612081e4fbf\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\6b8007517d9c76dba4cf0689bc875a10\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\556828dc15b67f7553c869ef252d2001\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\e77b7bfbdd96baf428b2d02e511a2616\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\b5ad4a4a54eaa97ea29ad98b01565f66\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\53d2545f941c8440d3b0a0969af4d2c0\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\7753707fe565837fa22c94901d2654a1\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\69d6d343d41d098a32421ce1b090dbdc\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\0e67df76e588c87360a4c7c6f62c4184\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\ea08f8496232db0c70223a6991128fd1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\02bf5e8c24e1379387219bf6584c5db7\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\6a49329c9d8a6819ed8470ce300567ed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\5b1841e6f7dfccd7f715a7f9fb79d729\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\089d391d0135b0bc620ab64860533180\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\0134bbdcf47c306948fb51cb787f93c4\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:1-20:12
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:5:5-18:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\14a4bde89efe72d300e87317d4bb7aeb\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\14a4bde89efe72d300e87317d4bb7aeb\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\53d2545f941c8440d3b0a0969af4d2c0\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\53d2545f941c8440d3b0a0969af4d2c0\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\69d6d343d41d098a32421ce1b090dbdc\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\69d6d343d41d098a32421ce1b090dbdc\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\53d2545f941c8440d3b0a0969af4d2c0\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:7:9-37
+	android:roundIcon
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:8:9-54
+	android:allowBackup
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:10:9-40
+activity#com.example.androidapp.MainActivity
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:11:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:12:13-16:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:13:17-69
+	android:name
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:15:27-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml:19:22-64
+uses-sdk
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\fe959992dd9fb5a624a6cac620166189\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\fe959992dd9fb5a624a6cac620166189\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\14a4bde89efe72d300e87317d4bb7aeb\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\14a4bde89efe72d300e87317d4bb7aeb\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\e4d436b8b0dbda28958f7060c3a14e99\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\e4d436b8b0dbda28958f7060c3a14e99\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\a5156bb4e257266ad61a8c699198ba69\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\a5156bb4e257266ad61a8c699198ba69\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\67c7f3dc3ff23c3797f8d6b6973d092d\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\67c7f3dc3ff23c3797f8d6b6973d092d\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\dfc11e809376578739bfc1e5c6c2ca25\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\dfc11e809376578739bfc1e5c6c2ca25\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\034687bf31c141b79e025612081e4fbf\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\034687bf31c141b79e025612081e4fbf\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\6b8007517d9c76dba4cf0689bc875a10\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\6b8007517d9c76dba4cf0689bc875a10\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\556828dc15b67f7553c869ef252d2001\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\556828dc15b67f7553c869ef252d2001\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\e77b7bfbdd96baf428b2d02e511a2616\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\e77b7bfbdd96baf428b2d02e511a2616\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\b5ad4a4a54eaa97ea29ad98b01565f66\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\b5ad4a4a54eaa97ea29ad98b01565f66\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\53d2545f941c8440d3b0a0969af4d2c0\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\53d2545f941c8440d3b0a0969af4d2c0\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\7753707fe565837fa22c94901d2654a1\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\7753707fe565837fa22c94901d2654a1\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\69d6d343d41d098a32421ce1b090dbdc\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\69d6d343d41d098a32421ce1b090dbdc\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\0e67df76e588c87360a4c7c6f62c4184\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\0e67df76e588c87360a4c7c6f62c4184\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\ea08f8496232db0c70223a6991128fd1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\ea08f8496232db0c70223a6991128fd1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\02bf5e8c24e1379387219bf6584c5db7\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\02bf5e8c24e1379387219bf6584c5db7\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\6a49329c9d8a6819ed8470ce300567ed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\6a49329c9d8a6819ed8470ce300567ed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\5b1841e6f7dfccd7f715a7f9fb79d729\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\5b1841e6f7dfccd7f715a7f9fb79d729\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\089d391d0135b0bc620ab64860533180\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\089d391d0135b0bc620ab64860533180\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\0134bbdcf47c306948fb51cb787f93c4\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Wafaa\.gradle\caches\transforms-2\files-2.1\0134bbdcf47c306948fb51cb787f93c4\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Wafaa\Documents\WafaaRepository\AndroidApp\app\src\main\AndroidManifest.xml
